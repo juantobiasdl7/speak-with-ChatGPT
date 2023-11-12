@@ -1,0 +1,9 @@
+# Virtual environment
+myenv
+.env
+*.pyc
+__pycache__/
+snippets.py
+
+# Ignore all .wav files
+*.wav
