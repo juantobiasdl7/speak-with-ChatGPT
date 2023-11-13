@@ -1,22 +1,17 @@
 import sounddevice as sd
 import soundfile as sf
-import numpy as np
 from pathlib import Path
 import openai
 import os
-import requests
 import re
 from colorama import Fore, Style, init
 from pydub import AudioSegment
-from pydub.playback import play
 from dotenv import load_dotenv
 import subprocess
 from tempfile import NamedTemporaryFile
 
 
 init()
-
-os.environ['TMPDIR'] = 'C:/Users/juant/Desktop/Projects/Speaking with ChatGPT/temp_folder'
 
 # Get Open AI API Key from environment variable
 openai.api_key = os.getenv('OPENAI_API_KEY')
